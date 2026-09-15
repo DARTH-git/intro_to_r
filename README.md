@@ -1,4 +1,4 @@
-# Decision Modeling in R Workshop Website
+# Intro to R for Decision Modeling website
 
 Welcome to the official repository for the Intro to R for Decision Modeling website.
 
