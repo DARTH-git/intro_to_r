@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - "*.qmd"
+    - "!materials/intro_to_r/00_prep.Rmd"
+    - "!materials/intro_to_r/01_getting_ready.Rmd"
+    - "!materials/intro_to_r/02_Introduction_template.Rmd"
+    - "!materials/intro_to_r/02_Introduction_solutions.Rmd"
+    - "!materials/intro_to_r/03_data_manipulation_template.Rmd"
+    - "!materials/intro_to_r/03_data_manipulation_solutions.Rmd"
+    - "!materials/intro_to_r/04_plotting_template.Rmd"
+    - "!materials/intro_to_r/04_plotting_solutions.Rmd"
+    - "!materials/intro_to_r/05_loops_and_functions_template.Rmd"
+    - "!materials/intro_to_r/05_loops_and_functions_solutions.Rmd"
+    - "!materials/intro_to_r/Matrix algebra in R - template.Rmd.Rmd"
+    - "!materials/intro_to_r/Matrix algebra in R - solutions.Rmd"
+    - "!materials/intro_to_r/05_loops_and_functions_template.Rmd"
+    - "!materials/intro_to_r/05_loops_and_functions_solutions.Rmd"
+
+website:
+  title: "Intro to R for Decision Modeling"
+  site-url: "https://darth-git.github.io/intro_to_r/"
+  repo-url: "https://github.com/DARTH-git/intro_to_r.git"
+  #repo-actions: [source, issue]
+  search: true
+  navbar:
+    background: primary
+    left:
+      - text: "Intro to R"
+        href: intro-r.qmd
+  sidebar:
+    style: "docked"
+    contents:
+      - index.qmd
+      - intro-r.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+
+execute:
+  freeze: auto
