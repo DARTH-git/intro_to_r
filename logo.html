@@ -1,0 +1,25 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toc = document.querySelector("#TOC");
+
+  if (!toc) return;
+
+  const link = document.createElement("a");
+
+  link.href = "https://darthworkgroup.com/";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.className = "darth-logo";
+  link.title = "DARTH Workgroup";
+
+  link.innerHTML = `
+    <img
+      src="https://www.darthworkgroup.com/images/darth.png"
+      alt="DARTH Workgroup">
+  `;
+
+  toc.parentNode.insertBefore(link, toc);
+
+});
+</script>

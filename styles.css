@@ -93,3 +93,21 @@
   color: #6b7280;
   font-weight: 400;
 }
+
+.darth-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.darth-logo img {
+  width: 70px;
+  height: auto;
+}
+
+@media (min-width: 1400px) {
+  #quarto-margin-sidebar {
+    transform: translateX(
+      clamp(0px, calc((100vw - 1400px) / 2), 2000px)
+    );
+  }
+}
